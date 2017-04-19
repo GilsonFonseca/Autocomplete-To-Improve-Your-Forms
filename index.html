@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Autocomplete codelab</title>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>  
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+		<style>	body{ margin: 45px;} </style>
+	</head>
+	<body>
+		<div class="row">
+			<form class="col s12">
+				<div class="card-panel teal lighten-2"><h5>Personal Information</h5></div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input placeholder="Full name" name="name" id="frmNameA" type="text" autocomplete="name" class="validate" required>
+						<label for="frmNameA">Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s4">
+						<input placeholder="name@example.com" name="email" id="frmEmailA" type="email" autocomplete="email"  class="validate" required>
+						<label for="frmEmailA" data-error="wrong" data-success="right">Email</label>	
+					</div>  	  
+					<div class="input-field col s4">
+						<input placeholder="name@example.com" name="emailC" id="frmEmailC" type="email" autocomplete="email"  class="validate" required>
+						<label for="frmEmailC"  data-error="wrong" data-success="right">Confirm Email</label>
+					</div>
+					<div class="input-field col s4">	
+						<input placeholder="+55-(32)-1234-5678" name="phone" id="frmPhoneNumA" type="tel" autocomplete="tel"  class="validate" required>
+						<label for="frmPhoneNumA">Phone</label>
+					</div>
+				</div>
+			
+				<div class="card-panel teal lighten-2"><h5>Address</h5></div>
+
+				<div class="row">
+					<div class="input-field col s6">	
+						<input name="ship-address" id="frmAddressS" type="text" autocomplete="shipping street-address" class="validate" required>
+						<label for="frmAddressS">Address</label>
+					</div>
+					<div class="input-field col s6">	
+						<input placeholder="Juiz de Fora" name="ship-city" id="frmCityS" type="text" autocomplete="shipping address-level2" class="validate" required>
+						<label for="frmCityS">City</label>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="input-field col s4">				
+						<input placeholder="MG" name="ship-state" id="frmStateS" type="text" autocomplete="shipping address-level3" class="validate" required>
+						<label for="frmStateS" >State</label>
+					</div>
+					<div class="input-field col s4">				
+						
+						<input placeholder="36039-000" name="ship-zip" id="frmZipS" type="text" autocomplete="shipping postal-code" class="validate" required>
+						<label for="frmZipS">CEP</label>
+					</div>
+					<div class="input-field col s4">								
+						<input placeholder="BR" name="ship-country" id="frmCountryS" type="text" autocomplete="shipping country" class="validate" required>
+						<label for="frmCountryS">Country</label>
+					</div>
+				</div>
+				
+				<div class="card-panel teal lighten-2"><h5>Payment</h5></div>
+				
+				<div class="row">
+					<div class="input-field col s6">				
+						<input placeholder="Full Name" name="ccname" id="frmNameCC" type="text" autocomplete="cc-name" class="validate" required>
+						<label for="frmNameCC">Name on card</label>
+					</div>
+					<div class="input-field col s6">				
+						<input name="cardnumber" id="frmCCNum" type="text" autocomplete="cc-number" class="validate" required>
+						<label for="frmCCNum">Card Number</label>				   
+					</div>
+				</div>
+				<div class="row">			  
+					<div class="input-field col s6">				
+						<input name="cvc" id="frmCCCVC" type="text" autocomplete="cc-csc" class="validate" required>
+						<label for="frmCCCVC">CVC</label>
+					</div>
+					<div class="input-field col s6">				
+						<input placeholder="MM-YYYY" name="cc-exp" id="frmCCExp" type="text" autocomplete="cc-exp" class="validate" required>
+						<label for="frmCCExp">Expiry</label>
+					  </div>
+				</div>
+				<div class="row">
+					<div class="input-field col 3"  style="float: right;">
+						<a class="waves-effect waves-light btn">Cancel</a>
+						<button class="btn waves-effect waves-light" type="submit" name="action" id="butCheckout">Check Out</button>				
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
