@@ -6,4 +6,4 @@ righ [here](https://codelabs.developers.google.com/codelabs/autocomplete/index.h
 In this tutorial I used [Materialize](http://materializecss.com/), that is a modern and responsive front-end framework based on Material Design.
 </br>If you wanna see it working just download the index.html file.
 </br>
-![img1](https://github.com/GilsonFonseca/Autocomplete-To-Improve-Your-Forms/images/img1.jpeg)
+![img1](https://github.com/GilsonFonseca/Autocomplete-To-Improve-Your-Forms/blob/master/images/img1.jpeg)
